@@ -1,0 +1,225 @@
+* {
+  box-sizing: border-box;
+}
+
+form,
+label,
+input,
+h1,
+h2,
+button,
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  outline: none;
+}
+.a11y-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}
+
+.wrapper {
+  margin: 100px auto;
+
+  max-width: calc(700px - 60px);
+  border: 2px solid #767676;
+  border-radius: 7px;
+}
+
+main {
+  max-width: 700px;
+  padding: 26px 24px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  border-bottom: 1px solid #bdbdbd;
+}
+header h1 {
+  display: inline-block;
+  font-size: 16px;
+}
+
+header::after {
+  content: "";
+  display: inline-block;
+  width: 22.4px;
+  height: 22.4px;
+  /* border: 1px solid black; */
+  position: absolute;
+  right: 0;
+  background: url(./images/close.png) no-repeat;
+}
+
+p {
+  margin-left: 24px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form .inp-id {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+form .inp-sec {
+  width: 100%;
+  padding: 15px;
+}
+
+.check-box-container {
+  margin-top: 16px;
+  margin-bottom: 21px;
+  position: relative;
+}
+
+.check-box {
+  display: none;
+}
+.check-box-container ::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  background: url(./login/images_login/icon_check_empty.png) no-repeat;
+}
+/* .check-box-container ::before:active {
+  background: url(./login/images_login/icon_check.png);
+  background-color: #2f80ed; */
+
+.check-box-container ::before:checked {
+  background: url(./login/images_login/icon_check.png);
+}
+
+.check-lb {
+  margin-left: 30px;
+}
+
+.login-container {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.login-container a {
+  color: #767676;
+  text-decoration: none;
+  position: relative;
+  margin-right: 12px;
+}
+
+.login-container a:nth-child(2):after {
+  content: "|";
+  display: inline-block;
+  position: absolute;
+  left: -4px;
+  bottom: 2px;
+}
+form button {
+  display: block;
+  color: #fff;
+  background: #2f80ed;
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  padding: 14px 0;
+  border: none;
+  border-radius: 6px;
+}
+
+form a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #767676;
+}
+
+form .login-1::after {
+  content: "|";
+  display: inline-block;
+  margin: 0 12px 0px 12px;
+}
+
+section {
+  border-top: 1px solid #767676;
+  margin-top: 38px;
+  position: relative;
+  vertical-align: center;
+}
+
+section::after {
+  content: "또는";
+  display: inline-block;
+  font-size: 14px;
+  color: #767676;
+  margin: auto;
+  background-color: #fff;
+  position: absolute;
+  padding: 13px;
+  top: -23px;
+  left: calc(50% - 13px);
+  z-index: 3;
+}
+section ul {
+  width: 100%;
+}
+section ul li:first-child {
+  margin-top: 29px;
+}
+section ul li {
+  margin-bottom: 10px;
+  position: relative;
+  border-radius: 60px;
+}
+
+section button {
+  width: 100%;
+  padding: 15px 0;
+  color: #767676;
+  font-size: 16px;
+  background-color: #fff;
+  border: 2px solid #767676;
+}
+.btn-2 {
+  border: 2px solid #2d9cdb;
+}
+.btn-3 {
+  border: 2px solid #00bf18;
+}
+
+.btn-4 {
+  border: 2px solid #f2c94c;
+}
+section button img {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+section button:active {
+  color: #000;
+  font-weight: bold;
+}
